@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro Producto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div class="navbar">
+
+        <div class="navbar-logo">
+            ☕ Panel Gerente
+        </div>
+
+        <div class="navbar-links">
+
+            <a href="panel.html">
+                Inicio
+            </a>
+
+            <a href="pedidos.html">
+                Pedidos
+            </a>
+
+            <a href="tabla.html">
+                Inventario
+            </a>
+
+            <a href="registro.html">
+                Productos
+            </a>
+            <a href="#" id="logoutBtn">
+                Salir
+            </a>
+
+        </div>
+
+    </div>
+    <div class="formulario">
+
+        <h1>Nuevo Producto</h1>
+
+        <input id="nombre" placeholder="Nombre">
+
+        <input id="precio" type="number" placeholder="Precio">
+
+        <input id="stock" type="number" placeholder="Stock">
+
+        <input id="categoria" placeholder="Categoria">
+
+        <input id="imagen" placeholder="URL Imagen">
+
+        <button id="btnGuardar">
+            Guardar
+        </button>
+        <h2>Productos Registrados</h2>
+
+        <table id="tablaProductos">
+
+            <thead>
+
+                <tr>
+
+                    <th>Nombre</th>
+
+                    <th>Precio</th>
+
+                    <th>Stock</th>
+
+                    <th>Acciones</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="listaProductos">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script type="module" src="../dist/registro.js">
+    </script>
+
+</html>

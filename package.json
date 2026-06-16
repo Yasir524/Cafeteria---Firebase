@@ -1,0 +1,21 @@
+{
+  "name": "cafeteria",
+  "version": "1.0.0",
+  "description": "Sistema de cafeteria",
+  "main": "index.js",
+  "scripts": {
+     "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "vite": "^8.0.16"
+  },
+  "dependencies": {
+    "firebase": "^12.14.0"
+  }
+  
+}
+
