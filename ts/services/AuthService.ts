@@ -3,7 +3,8 @@ import { auth } from "./Firebase.js";
 import { doc, getDoc }    from "firebase/firestore";
 
 import { db } from "./Firebase.js";
-
+/*Maneja el sistema de usuarios. Se encarga de procesar los inicios de sesión, 
+registrar cuentas nuevas y verificar las credenciales del usuario.*/
 export class AuthService {
     login(email: string, password: string) {
         return signInWithEmailAndPassword(

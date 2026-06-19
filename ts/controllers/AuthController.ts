@@ -1,4 +1,5 @@
 import { AuthService } from "../services/AuthService.js";
+import { ToastService } from "../services/ToastService.js";
 
 export class AuthController {
 
@@ -55,18 +56,20 @@ export class AuthController {
 
                     break;
 
-                    alert(
-                        "El usuario no tiene rol asignado"
-                    );
+                   ToastService.mostrar(
+    "El usuario no tiene rol asignado",
+    "error"
+);
             }
         }
         catch (error: any) {
 
             console.error(error);
 
-            alert(
-                error.code
-            );
+           ToastService.mostrar(
+    "Correo o contraseña incorrectos",
+    "error"
+);
 
         }
     }

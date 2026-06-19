@@ -1,0 +1,16 @@
+export class ToastService {
+    static mostrar(mensaje, tipo = "info") {
+        const contenedor = document.getElementById("toast-container");
+        if (!contenedor)
+            return;
+        const toast = document.createElement("div");
+        toast.className =
+            `toast ${tipo}`;
+        toast.textContent =
+            mensaje;
+        contenedor.appendChild(toast);
+        setTimeout(() => {
+            toast.remove();
+        }, 3000);
+    }
+}
